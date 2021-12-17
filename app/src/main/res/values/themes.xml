@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimaryVariant">@color/blue_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">#778899</item>
+        <!-- Status bar color. -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeCloseDrawable">@drawable/cancel</item>
+        <item name="actionModeStyle">@style/actionMode</item>
+        <item name="android:textCursorDrawable">@drawable/curosrcolor</item>
+        <item name="searchViewStyle">@style/searchcustom</item>
+
+
+    </style>
+
+    <style name="searchcustom" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@drawable/search</item>
+        <item name="android:closeIcon">@drawable/cancel</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="textInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    </style>
+
+    <style name="actionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/c_title_style</item>
+        <item name="background">@color/main_color_background</item>
+    </style>
+
+    <style name="c_title_style" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CustomMaterialDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background Color-->
+        <item name="android:background">#FFFFFF</item>
+        <!-- Text Color for title and message -->
+        <item name="colorOnSurface">#BF40BF</item>
+        <!-- Text Color for buttons -->
+        <item name="colorPrimary">#BF40BF</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.MaterialComponents.LargeComponent
+        </item>
+    </style>
+
+
+</resources>

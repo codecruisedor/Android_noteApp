@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/locked_notes"
+        android:id="@+id/access_locked_notes" />
+    <item
+        android:title="Task list"
+        android:id="@+id/access_wish_lists" />
+    <item
+        android:title="Product list"
+        android:id="@+id/access_shopping_lists" />
+    <item
+        android:title="About"
+        android:id="@+id/access_about" />
+</menu>

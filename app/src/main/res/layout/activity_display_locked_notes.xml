@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view_locked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_background"
+    tools:context=".Display_locked_notes">
+
+    <LinearLayout
+        android:id="@+id/layout_for_wholespan_locked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/MainActionbar_locked"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_color_background"
+            app:liftOnScroll="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_locked"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextAppearance="@style/c_title_style">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Hidden Notes"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/lock"
+                        android:layout_width="20dp"
+                        android:alpha="0.7"
+                        android:layout_marginBottom="1dp"
+                        android:layout_height="30dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_for_notes_list_locked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MainActionbar_locked" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_fornolist_locked"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/catamaran"
+        android:text="@string/nonotestaken_locked"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textColor="#8d8d8d"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/coconut_locked"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hammock"
+        android:alpha="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/layout_for_wholespan_locked"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fornolist_locked"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

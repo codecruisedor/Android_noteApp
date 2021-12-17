@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">NoteIt</string>
+    <string name="nonotestaken">No notes to show,click new to add notes…</string>
+    <string name="forgot_pattern"><u>Forgot Pattern?</u></string>
+    <string name="first_time_set_lock">First time</string>
+    <string name="change_lock">lock</string>
+    <string name="pattern">null</string>
+    <string name="nonotestaken_locked">None locked yet..</string>
+    <string name="hidden_notes">Hidden notes</string>
+    <string name="reminder">\u0020\u0020Reminder</string>
+    <string name="lock">\u0020\u0020Lock</string>
+    <string name="delete">\u0020\u0020Delete</string>
+    <string name="locked_notes">Locked Notes</string>
+    <string name="about"><u>Freepik</u></string>
+    <string name="about_flaticon"><u>Flaticon</u></string>
+    <string name="App_description">A simple note taking app that has features like locking a note and setting a reminder.</string>
+    <string name="Developer">Nisarg Mehta</string>
+    <string name="Resources"><div>Icons made by <a href="https://www.freepik.com">&lt;u&gt;Freepik&lt;/u&gt;</a> from <a href="https://www.flaticon.com/" title="Flaticon">&lt;u&gt;Flaticon&lt;/u&gt;</a></div></string>
+    <string name="forgot_pin"><u>Forgot Pin?</u></string>
+    <string name="done">Done</string>
+    <string name="note_this_magic_number_down_in_case_you_forget_the_pattern">Note this magic number down in case you forget the pattern!</string>
+    <string name="take_screenshot">Take screenshot</string>
+    <string name="voice">\u0020\u0020New Voice Note</string>
+    <string name="create_new_note">New</string>
+    <string name="search">Search</string>
+    <string name="enter_email_textview">Enter your email as a backup for resetting pattern lock</string>
+    <string name="enter_email">Enter email</string>
+    <string name="noteToUser">*Note*:Your email is asked only for the purpose of resetting the pattern lock.</string>
+    <string name="email">null</string>
+    <string name="unlock">\u0020\u0020Unlock</string>
+    <string name="question_food">Favourite food?</string>
+    <string name="question_movie">Favourite movie?</string>
+    <string name="question_animal">Favourite animal?</string>
+    <string name="no_lists_yet">No items added yet..</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/main_color_background"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkbox_wish_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:gravity="center_vertical"></com.google.android.material.checkbox.MaterialCheckBox>
+
+            <TextView
+                android:layout_alignBaseline="@+id/checkbox_wish_list"
+                android:layout_alignTop="@+id/checkbox_wish_list"
+                android:layout_toEndOf="@+id/checkbox_wish_list"
+                android:id="@+id/textView_wish_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/tile_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/dividerVertical" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="never"
+        android:title="Add product"
+        android:id="@+id/add_product" />
+    <item
+        android:id="@+id/Print"
+        app:showAsAction="never"
+        android:title="Generate PDF" />
+    <item
+        app:showAsAction="never"
+        android:title="Delete list"
+        android:id="@+id/Delete_product_list" />
+</menu>

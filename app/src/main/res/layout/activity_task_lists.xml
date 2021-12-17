@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_color_background"
+    android:layout_height="match_parent"
+    tools:context=".taskList">
+
+    <LinearLayout
+        android:id="@+id/layout_for_wish_litsts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/mainActionbar_wish_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liftOnScroll="true"
+            android:background="@color/main_color_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_task_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="?attr/actionBarStyle"
+                app:contentInsetRight="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:titleTextAppearance="@style/Toolbar.TitleText">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Task list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/clipboard"
+                        android:alpha="0.7"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"></ImageView>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view_for_task_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainActionbar_wish_list" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_for_no_taskList"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textColor="#8d8d8d"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/coconut_wish_list"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/hammock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/layout_for_wish_litsts"
+        app:layout_constraintTop_toBottomOf="@+id/textView_for_no_taskList"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

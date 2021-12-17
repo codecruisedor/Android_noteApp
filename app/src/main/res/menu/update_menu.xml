@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/share"
+        android:id="@+id/share">
+
+    </item>
+
+    <item
+        android:title="Done_update"
+        android:id="@+id/done_update"
+        android:icon="@drawable/done_black"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/overflow"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="@string/lock"
+                android:id="@+id/lock_update" />
+            <item
+                android:title="@string/reminder"
+                android:id="@+id/reminder_update" />
+            <item
+                android:title="@string/delete"
+                android:id="@+id/delete_update"
+
+                />
+        </menu>
+    </item>
+
+
+</menu>

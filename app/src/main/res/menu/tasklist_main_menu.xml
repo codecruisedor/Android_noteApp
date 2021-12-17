@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Add task"
+        android:id="@+id/add_task"></item>
+
+
+    <item
+        android:title="Delete list"
+        android:id="@+id/delete_task_list">
+
+    </item>
+
+    <item
+        android:title="Sort By"
+        android:id="@+id/sort_task">
+
+        <menu>
+            <item
+                android:title="Priority"
+                android:id="@+id/sort_by_priority_task"></item>
+            <item
+                android:title="Date Added"
+                android:id="@+id/sort_by_date_task"></item>
+        </menu>
+    </item>
+</menu>

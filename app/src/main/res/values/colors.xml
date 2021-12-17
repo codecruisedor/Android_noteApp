@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_main">#0047AB</color>
+    <color name="yellow">#ffe135</color>
+    <color name="grey">#a7a7a7</color>
+    <color name="tasklist_high_pr">#ff0000</color>
+    <color name="tasklist_low_pr">#00cc00</color>
+    <color name="tasklist_mid_pr">@color/black</color>
+    <color name="create_new_button">#C60C0C0C</color>
+    <color name="main_color_background">#F3F3F3</color>
+    <color name="status_bar">#807C7C</color>
+</resources>

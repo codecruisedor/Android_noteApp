@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/arsenal_bold</item>
+        <item>@font/asap</item>
+        <item>@font/asap_bold</item>
+        <item>@font/asap_medium</item>
+        <item>@font/assistant_bold</item>
+        <item>@font/basic</item>
+        <item>@font/cantarell</item>
+        <item>@font/catamaran</item>
+        <item>@font/catamaran_extrabold</item>
+        <item>@font/cousine_bold</item>
+        <item>@font/martel_sans_bold</item>
+    </array>
+</resources>

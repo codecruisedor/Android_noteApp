@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/main_color_background">
+
+    <LinearLayout
+        android:id="@+id/shoppingItemLayout"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/shoppingItemLayoutHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/itemName"
+                android:textSize="20sp"
+                android:text="milk"
+                android:layout_margin="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+
+                android:id="@+id/quantity"
+                android:textSize="15sp"
+                android:text="X"
+                android:layout_margin="7dp"
+                android:textColor="#C0C0C0"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></View>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/price"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_margin="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/size"
+            android:layout_margin="7dp"
+            android:text="size/weight : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <View
+            android:id="@+id/divider_shopping_item"
+            android:background="#bebebe"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+
+        </View>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
